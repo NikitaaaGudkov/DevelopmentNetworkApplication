@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34607.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{27383BA0-E4E5-4777-AB40-75A91A825B4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{D8A95A83-62C9-4BCD-9AAF-8CEC3BA6A592}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{DCFFFFF3-8988-405A-9B0B-80A1200ACE8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpLibrary", "TcpLibrary\TcpLibrary.csproj", "{83FE5CD7-C9D3-4553-929C-8FFB3E6D9429}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{7F0F9954-2D69-4D63-8206-2AB604F26B0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "DataBase\DataBase.csproj", "{08EEA67E-32F0-4A26-8E6D-7FF0046465A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMQLibrary", "NetMQLibrary\NetMQLibrary.csproj", "{0CCE8206-D97A-4A2D-BF4B-52AD00DBF1DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{6C4C8450-0EE7-4E86-BBE3-18869C3FE5BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +23,39 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{27383BA0-E4E5-4777-AB40-75A91A825B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27383BA0-E4E5-4777-AB40-75A91A825B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27383BA0-E4E5-4777-AB40-75A91A825B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27383BA0-E4E5-4777-AB40-75A91A825B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8A95A83-62C9-4BCD-9AAF-8CEC3BA6A592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8A95A83-62C9-4BCD-9AAF-8CEC3BA6A592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8A95A83-62C9-4BCD-9AAF-8CEC3BA6A592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8A95A83-62C9-4BCD-9AAF-8CEC3BA6A592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCFFFFF3-8988-405A-9B0B-80A1200ACE8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCFFFFF3-8988-405A-9B0B-80A1200ACE8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCFFFFF3-8988-405A-9B0B-80A1200ACE8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCFFFFF3-8988-405A-9B0B-80A1200ACE8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83FE5CD7-C9D3-4553-929C-8FFB3E6D9429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83FE5CD7-C9D3-4553-929C-8FFB3E6D9429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83FE5CD7-C9D3-4553-929C-8FFB3E6D9429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83FE5CD7-C9D3-4553-929C-8FFB3E6D9429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F0F9954-2D69-4D63-8206-2AB604F26B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0F9954-2D69-4D63-8206-2AB604F26B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0F9954-2D69-4D63-8206-2AB604F26B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0F9954-2D69-4D63-8206-2AB604F26B0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08EEA67E-32F0-4A26-8E6D-7FF0046465A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08EEA67E-32F0-4A26-8E6D-7FF0046465A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08EEA67E-32F0-4A26-8E6D-7FF0046465A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08EEA67E-32F0-4A26-8E6D-7FF0046465A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CCE8206-D97A-4A2D-BF4B-52AD00DBF1DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CCE8206-D97A-4A2D-BF4B-52AD00DBF1DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CCE8206-D97A-4A2D-BF4B-52AD00DBF1DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CCE8206-D97A-4A2D-BF4B-52AD00DBF1DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4C8450-0EE7-4E86-BBE3-18869C3FE5BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4C8450-0EE7-4E86-BBE3-18869C3FE5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4C8450-0EE7-4E86-BBE3-18869C3FE5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4C8450-0EE7-4E86-BBE3-18869C3FE5BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {45411A1C-4B6A-4A2D-B914-A77D3C7D06B8}
+		SolutionGuid = {C3EA6026-731D-4FC9-B43E-9FBA284177D1}
 	EndGlobalSection
 EndGlobal

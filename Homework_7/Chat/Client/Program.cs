@@ -5,11 +5,15 @@ using Interfaces;
 using NetMQLibrary;
 using TcpLibrary;
 
-public class Program
+namespace Client
 {
-    public static void Main(string[] args)
+    internal class Program
     {
-        IMessageSource server = MyTcpServer.Instance;
-        server.Run();
+        static async Task Main(string[] args)
+        {
+            IMessageSourceClient client = new MyTcpClient();
+
+            await client.Run();
+        }
     }
 }
